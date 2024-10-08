@@ -15,11 +15,11 @@
 
 #logo {
     height: 90px;
-    width : 150px;
+    width: 150px;
     float: left;
     position: fixed;
     top: 10px;
-    left:10px;
+    left: 10px;
 }
 
 #home {
@@ -134,15 +134,17 @@ nav ul li a {
 .m4, .m5 {
     flex: 1; /* Allow each child to take equal space */
     margin: 10px; /* Add some margin between the elements */
-    color:white;
+    color: white;
 }
-.m4{
+
+.m4 {
     padding-left: 5%;
 }
 
 .m4 img, .m5 h1, .m5 p {
     max-width: 100%; /* Ensure images and text don't overflow their container */
 }
+
 #service {
     padding-top: 15%;
     padding-left: 10%;
@@ -150,4 +152,68 @@ nav ul li a {
     background-color: black;
     margin-bottom: 0; 
     color: white;
+}
+
+/* New styles for contact section */
+#contact {
+    padding: 20px 10%; /* Reduced top and bottom padding */
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: black; /* Dark text for readability */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px;
+}
+
+.contact-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between items */
+    margin-top: 10px; /* Reduced space above the container */
+}
+
+.contact-form {
+    flex: 1; /* Allow the form to take equal space */
+    margin-right: 30px; /* Space between the form and details */
+}
+
+.contact-details {
+    flex: 1; /* Allow details to take equal space */
+}
+
+#contact h2 {
+    margin-bottom: 10px; /* Reduced bottom margin */
+    font-size: 22px; /* Slightly smaller font size */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form label {
+    margin: 5px 0 3px; /* Reduced margins for labels */
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 8px; /* Reduced padding inside inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; /* Slightly smaller font size */
+}
+
+form input[type="submit"] {
+    background-color: rgb(89, 162, 235);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(243, 113, 113);
+}
+
+#contact p {
+    margin-top: 10px; /* Reduced top margin */
+    line-height: 1.4; /* Reduced line height for tighter spacing */
 }
